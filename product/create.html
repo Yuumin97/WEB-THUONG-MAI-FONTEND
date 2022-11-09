@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<h2>CREAT PRODUCT</h2>
+<a href="list.html">Back</a>
+<p id="message" style="color: blue;display: none">Create success!</p>
+<table>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td><input type="number" id="price"></td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td><input type="text" id="desc"></td>
+    </tr>
+    <tr>
+        <td>Manufacturer</td>
+        <td><input type="text" id="manuf"></td>
+    </tr>
+    <tr>
+        <td>IMAGE</td>
+        <td><input type="text" id="img"></td>
+    </tr>
+    <tr>
+
+        <td colspan="2" align="center">
+            <button id="button">Create</button></td>
+    </tr>
+</table>
+
+
+</body>
+<script>
+    $(document).ready(function (){
+        $('#button').click(function (){
+            let productCreate = {
+
+                name: $('#name').val(),
+                price: $('#price').val(),
+                description: $('#desc').val(),
+                manufacture: $('#manuf').val(),
+                image: $('#img').val()
+
+            }
+            console.log(JSON.stringify(productCreate))
+            $.ajax({
+                url:'http://localhost:8080/api/products/',
+                method:'POST',
+
+                contentType:'application/Json; charset=UTF-8',
+                data: JSON.stringify(productCreate),
+
+                success:function (){
+                    $('#message').show();
+
+                },
+                error: function (){
+                    document.getElementById('create').innerHTML = "Error "
+                }
+            })
+
+
+
+        })
+    })
+</script>
+</html>
