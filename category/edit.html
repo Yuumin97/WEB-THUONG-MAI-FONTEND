@@ -41,7 +41,7 @@
     })
     function getCategory(){
         $.ajax({
-            url:'http://localhost:8080/api/categories/'+id,
+            url:'https://threephoneshop.herokuapp.com/api/categories/'+id,
             method:'GET',
             contentType:'application/Json; charset=UTF-8',
             success: function (data){
@@ -64,7 +64,7 @@
         }
         console.log(category)
         $.ajax({
-            url:'http://localhost:8080/api/categories/'+id,
+            url:'https://threephoneshop.herokuapp.com/api/categories/'+id,
             method: 'PUT',
             data:JSON.stringify(category),
             contentType:'application/Json; charset=UTF-8',

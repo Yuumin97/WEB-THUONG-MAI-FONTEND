@@ -10,7 +10,7 @@
 <body>
 <h1>Change avatar</h1>
 <span style="color: red" id="validate"></span>
-<input type="file" value="upload" accept=".jpg" id="fileButton">
+<input type="file" value="upload" accept=".mp4" id="fileButton">
 <div id="imgDiv"></div>
 <button class="btn btn-success" type="submit" id="change_avatar">Change Avatar</button>
 <a href="../index.html">Back Home</a>
@@ -27,11 +27,11 @@
             }
             changeAvatar.avatar = avatar;
             $.ajax({
-                url: 'https://jav06.herokuapp.com/api/auth/change/avatar',
+                url: 'http://localhost:8080/api/auth/change/avatar',
                 method: 'PUT',
                 data: JSON.stringify(changeAvatar),
                 contentType: 'application/json; charset=UTF8',
-
+                headers : {'Authorization': 'Bearer'+window.localStorage.getItem('TOKEN_KEY')},
                 success: function (data) {
                     console.log('data upload ---> ', data)
                     document.getElementById('validate').innerHTML = 'Update Avatar success!'

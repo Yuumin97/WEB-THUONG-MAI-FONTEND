@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26c330d-11da-41f3-b012-b33c8d17f01c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-login/register1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-file/upload-products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form-login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/form-login/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/change-avatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/change-avatar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -34,7 +55,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/OS/Desktop/DUCTEST/WEB-THUONG-MAI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/OS/Desktop/DUCTEST/startbootstrap-shop-homepage-gh-pages&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -55,6 +77,8 @@
       <workItem from="1668024632706" duration="38000" />
       <workItem from="1668024720849" duration="9000" />
       <workItem from="1668024742694" duration="27000" />
+      <workItem from="1668166388743" duration="1403000" />
+      <workItem from="1668326519712" duration="13334000" />
     </task>
     <servers />
   </component>

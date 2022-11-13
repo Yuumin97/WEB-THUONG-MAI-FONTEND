@@ -52,7 +52,7 @@
     })
     function getProduct(){
         $.ajax({
-            url:'http://localhost:8080/api/products/'+id,
+            url:'https://threephoneshop.herokuapp.com/api/products/'+id,
             method:'GET',
             contentType:'application/Json; charset=UTF-8',
             success: function (data){
@@ -78,7 +78,7 @@
             idCategory: $('#category').val()
         }
         $.ajax({
-            url:'http://localhost:8080/api/products/'+id,
+            url:'https://threephoneshop.herokuapp.com/api/products/'+id,
             method: 'PUT',
             data:JSON.stringify(product),
             contentType:'application/Json; charset=UTF-8',

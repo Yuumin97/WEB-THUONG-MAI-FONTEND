@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONT-END.iml" filepath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONT-END.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" filepath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" />
-<<<<<<< HEAD
->>>>>>> chien
-=======
->>>>>>> f5ffd2ccf1391a499d94dac7bdbebd2c92ec9fc4
->>>>>>> phu
     </modules>
   </component>
 </project>

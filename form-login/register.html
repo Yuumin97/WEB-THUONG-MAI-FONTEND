@@ -142,12 +142,12 @@
       signUpForm.username = $('#username').val();
       signUpForm.email = $('#email').val();
       signUpForm.password = $('#password').val();
-      signUpForm.roles = ["admin"];
+      signUpForm.roles = ["user"];
       let signUpFormOBJ = JSON.stringify(signUpForm);
       console.log('data truoc --> ', signUpFormOBJ)
       $.ajax({
         async: false,
-        url: 'https://jav06.herokuapp.com/api/auth/signup',
+        url: 'https://threephoneshop.herokuapp.com/api/auth/signup',
         data: signUpFormOBJ,
         contentType: 'application/json; charset=UTF8',
         method: 'POST',

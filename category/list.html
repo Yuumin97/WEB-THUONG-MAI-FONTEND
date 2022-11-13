@@ -34,7 +34,7 @@
 </body>
 
 <script>
-    let url = 'http://localhost:8080/api/categories?page=';
+    let url = 'https://threephoneshop.herokuapp.com/api/categories?page=';
     let page = 0;
 
     $(document).ready(function (){
@@ -63,7 +63,6 @@
                     <td>${ct.id}</td>
                     <td>${ct.name}</td>
                     <td>${ct.products}</td>
-
                     <td><a href="edit.html?id=${ct.id}"><button>edit</button></a></td>
                     <td><a href="delete.html?id=${ct.id}"><button>delete</button></a></td>
                     </tr>

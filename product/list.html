@@ -37,27 +37,25 @@
 </body>
 
 <script>
-    let url = 'http://localhost:8080/api/products?page=';
+    let url = 'https://threephoneshop.herokuapp.com/api/products?page=';
     let page = 0;
 
     $(document).ready(function (){
         getProduct();
     })
 
-
-
     function getProduct(){
         $.ajax({
             url:url+page,
+            headers : {'Authorization': 'Bearer'+window.localStorage.getItem('TOKEN_KEY')},
             method : 'GET',
             contentType: 'application/Json;charset=UTF-8',
             success : function (data){
-
                 //ve bang du lieu
                 let products = data.content
                 console.log(products)
                 let tbody = $('#tbody');
-                // lam trong truocs khi goi laij bang
+                // lam trong truoc khi goi lai bang
                 $('#tbody').empty();
                 for (let i = 0; i < products.length; i++) {
                     let pr = products[i];
@@ -75,7 +73,6 @@
                     `
                     )
                 }
-
                 //truoc khi ve phan trang lam troong
                 $('#page').empty();
                 //ve phan trang
@@ -89,9 +86,6 @@
                 if (!data.last){
                     $('#page').append(`<button onclick="nextPage()">Next</button>`)
                 }
-
-
-
             },
             error : function (){
                 alert('Error')
