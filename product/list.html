@@ -37,7 +37,7 @@
 </body>
 
 <script>
-    let url = 'https://threephoneshop.herokuapp.com/api/products?page=';
+    let url = 'http://localhost:8080/api/products?page=';
     let page = 0;
 
     $(document).ready(function (){
@@ -81,7 +81,7 @@
                 }
                 //so trang hien tai tren tong so trang
                 $('#page').append(`
-                ${data.number + 1} / ${data.totalPages}
+                ${ data.number + 1} / ${data.totalPages}
                 `)
                 if (!data.last){
                     $('#page').append(`<button onclick="nextPage()">Next</button>`)

@@ -12,15 +12,21 @@
 <body>
 <div class="main">
   <input type="checkbox" id="chk" aria-hidden="true">
-
   <div class="signup">
     <label for="chk" aria-hidden="true">Sign up</label>
-    <input type="text" id="name" placeholder="Name" required="">
-    <input type="text" id="usernamea" placeholder="Username" required="">
-    <input type="email" id="email" placeholder="Email" required="">
-    <input type="password" id="passworda" placeholder="Password" required="">
+    <span id="validate_name" ></span>
+    <input oninput="validate()" type="text" id="name" placeholder="Name" >
+    <span id="validate_username"></span>
+    <input oninput="validate()" type="text" id="usernamea" placeholder="Username" >
+    <span id="validate_email" ></span>
+    <input oninput="validate()" type="email" id="email" placeholder="Email" >
+    <span id="validate_password" ></span>
+    <input oninput="validate()" type="password" id="passworda" placeholder="Password" >
+    <span style="color: red" id="validate_repeat" ></span>
+    <input oninput="validate()" type="password" id="repeat_password" placeholder="Repeat Password" >
     <button type="submit" id="btn-signup">Sign up</button>
     <span id="status" style="color: red"></span>
+    <span id="status-signup" style="color: red"></span>
   </div>
 
   <div class="login">
@@ -36,19 +42,78 @@
   $(document).ready(function () {
     let signInform = {};
     let signUpForm = {};
-    let noUser = {
-      message: "no_user"
+    function validateEmail() {
+      email = document.getElementById('email').value;
+      console.log('goi ham validate')
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        return (true)
+      }
+      return (false)
     }
-    let noEmail = {
-      message: "no_email"
+
+    function validate() {
+      let names = document.getElementById('name').value;
+      email = document.getElementById('email').value;
+      console.log('leng -->', names.length)
+      if (names.trim() === '') {
+        document.getElementById('status').innerHTML = 'The names is required!'
+        return
+      } else if (names.length < 2 || names.length > 50) {
+        document.getElementById('status').innerHTML = 'The names is more less than 2 character or is more than 6 character'
+        return;
+      } else {
+        document.getElementById('status').innerHTML = ''
+      }
+      let username = document.getElementById('usernamea').value;
+      if (username.trim() === '') {
+        document.getElementById('status').innerHTML = 'The username is required!'
+        return
+      } else if (username.length < 2 || names.length > 50) {
+        document.getElementById('status').innerHTML = 'The username is more less than 2 character or is more than 6 character'
+        return;
+      } else {
+        document.getElementById('status').innerHTML = ''
+      }
+      console.log('email ===> ', email)
+      if (email === '') {
+        document.getElementById('status').innerHTML = 'The email is required!'
+        return;
+      } else if (!validateEmail()) {
+        console.log('check --->', validateEmail())
+        console.log('vao day khong nhe')
+        document.getElementById('status').innerHTML = 'The email is invalid!'
+        return;
+      } else {
+        document.getElementById('status').innerHTML = ''
+      }
+      let password = document.getElementById('passworda').value;
+      if (password.trim() === '') {
+        document.getElementById('status').innerHTML = 'The password is required!'
+        return
+      } else if (password.length < 2 || password.length > 50) {
+        document.getElementById('status').innerHTML = 'The password is more less than 2 character or is more than 6 character'
+        return;
+      } else {
+        document.getElementById('status').innerHTML = ''
+      }
+      let repeat_pass = document.getElementById('status').value;
+      if(repeat_pass!==password){
+        document.getElementById('status').innerHTML = 'The password is not match!'
+      } else {
+        document.getElementById('status').innerHTML = ''
+      }
     }
-    let createSuccess = {
-      message: "yes"
-    }
+
+
+
     $('#btn-login').click(function () {
       signInform.username = $('#username').val();
+      console.log('producer', signInform.username)
       signInform.password = $('#password').val();
+      console.log('producer', signInform.password)
+      console.log('signInForm -->',signInform)
       let signInFormObj = JSON.stringify(signInform);
+      console.log('signInFormObj == ', signInFormObj)
       $.ajax({
         url: 'http://localhost:8080/api/auth/signin',
         async: false,
@@ -56,6 +121,8 @@
         data: signInFormObj,
         contentType: 'application/json; charset=utf8',
         success: function (data) {
+          console.log('jwtResponse--->', data)
+          console.log('jwtResponse- status-->', data.status)
           if(data.status == 202){
             document.getElementById('status_login').innerHTML = 'Login Failed! Please try again or sign up!';
             return
@@ -64,20 +131,14 @@
           window.localStorage.setItem('NAME_KEY', data.name);
           window.localStorage.setItem('AVATAR_KEY',data.avatar);
           window.localStorage.setItem('ROLE_KEY',JSON.stringify(data.roles));
-          if(check(data.authorities,"ROLE_ADMIN")){
-            window.location.href = '/index.html';
-            window.localStorage.setItem('ROLE_KEY','ADMIN')
-          }
-          else {
-            window.location.href = '/index.html';
-            window.localStorage.setItem('ROLE_KEY','USER')
-          }
+          window.location.href = 'index.html';
         },
         error: function (error) {
         }
       })
     })
     $('#btn-signup').click(function () {
+      validate();
       signUpForm.name = $('#name').val();
       signUpForm.username = $('#usernamea').val();
       signUpForm.email = $('#email').val();
@@ -86,35 +147,25 @@
       let signUpFormObj = JSON.stringify(signUpForm);
       console.log('signUpFormObj---->',signUpFormObj)
       $.ajax({
-        url: 'https://threephoneshop.herokuapp.com/api/auth/signup',
+        url: 'http://localhost:8080/api/auth/signup',
         method: 'POST',
         contentType: 'application/json; charset=uft8',
         data: signUpFormObj,
         success: function (data) {
           console.log('data ===', data);
-          if(JSON.stringify(data)==JSON.stringify(noUser)){
+          if (data.message === 'nouser') {
             document.getElementById('status').innerHTML = 'The username is existed! Please try again!'
-          }
-          if(JSON.stringify(data)==JSON.stringify(noEmail)){
-            document.getElementById('status').innerHTML = 'The Email is existed! Please try again!'
-          }
-          if(JSON.stringify(data)==JSON.stringify(createSuccess)){
-            document.getElementById('status').innerHTML = 'Create User Account Success! Login Please!'
+          } else if (data.message === 'noemail') {
+            document.getElementById('status').innerHTML = 'The email is existed! Please try again!'
+          } else if (data.message === 'yes') {
+            document.getElementById('status').innerHTML = 'Create success! Please Login!'
           }
         }
       })
     })
   })
-  function check(roles,check){
-    for (let i = 0; i < roles.length; i++) {
-      console.log("role[i]",roles[i])
-      if (roles[i].authority === check){
-        return true;
-      }
 
-    }
-    return false;
-  }
+
 </script>
 </body>
 </html>

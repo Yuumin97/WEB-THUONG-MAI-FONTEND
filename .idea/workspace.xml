@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26c330d-11da-41f3-b012-b33c8d17f01c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form-login/register1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-file/upload-products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WEB-THUONG-MAI-FONTEND.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category/categoy_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lognin/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lognin/file/three.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lognin/user/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/category/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form-login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/form-login/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/change-avatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/change-avatar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart/cart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,18 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/OS/Desktop/DUCTEST/startbootstrap-shop-homepage-gh-pages&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/OS/Desktop/DUCTEST/WEB-THUONG-MAI/WEB-THUONG-MAI-FONTEND/lognin",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OS\Desktop\DUCTEST\WEB-THUONG-MAI\WEB-THUONG-MAI-FONTEND\lognin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OS\Desktop\DUCTEST\WEB-THUONG-MAI\WEB-THUONG-MAI-FONTEND" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,7 +81,8 @@
       <workItem from="1668024720849" duration="9000" />
       <workItem from="1668024742694" duration="27000" />
       <workItem from="1668166388743" duration="1403000" />
-      <workItem from="1668326519712" duration="13334000" />
+      <workItem from="1668326519712" duration="27024000" />
+      <workItem from="1668373871397" duration="11985000" />
     </task>
     <servers />
   </component>

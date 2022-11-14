@@ -78,7 +78,7 @@
             idCategory: $('#category').val()
         }
         $.ajax({
-            url:'https://threephoneshop.herokuapp.com/api/products/'+id,
+            url:'http://localhost:8080/api/products/'+id,
             method: 'PUT',
             data:JSON.stringify(product),
             contentType:'application/Json; charset=UTF-8',
