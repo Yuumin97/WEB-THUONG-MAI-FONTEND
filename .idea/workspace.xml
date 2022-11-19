@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26c330d-11da-41f3-b012-b33c8d17f01c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/category/categoy_product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lognin/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lognin/file/three.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lognin/user/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/product/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingcart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart/cart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/OS/Desktop/DUCTEST/WEB-THUONG-MAI/WEB-THUONG-MAI-FONTEND/lognin",
+    "last_opened_file_path": "C:/Users/OS/Desktop/Angular/demo3/demo4",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -82,7 +76,9 @@
       <workItem from="1668024742694" duration="27000" />
       <workItem from="1668166388743" duration="1403000" />
       <workItem from="1668326519712" duration="27024000" />
-      <workItem from="1668373871397" duration="11985000" />
+      <workItem from="1668373871397" duration="13780000" />
+      <workItem from="1668412475229" duration="4086000" />
+      <workItem from="1668476267061" duration="16000" />
     </task>
     <servers />
   </component>

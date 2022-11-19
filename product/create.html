@@ -81,7 +81,7 @@
                 method:'POST',
                 contentType:'application/Json; charset=UTF-8',
                 data: JSON.stringify(productCreate),
-                headers : {'Authorization': 'Bearer '+window.localStorage.getItem('TOKEN_KEY')},
+                // headers : {'Authorization': 'Bearer '+window.localStorage.getItem('TOKEN_KEY')},
                 success:function (){
                     $('#message').show();
                 },

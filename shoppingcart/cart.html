@@ -104,8 +104,11 @@
             success: function (data) {
                 console.log("co vào success k =====>")
                 let responseDTO = data.connect
-                console.log(responseDTO)
                 console.log(data)
+                let amount  = data.amount
+                let products = data.products
+                console.log(products)
+
             }
         })
 
